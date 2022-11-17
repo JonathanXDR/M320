@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="787c2bda-9c73-430d-acc4-7a3cba1df9f5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/src/com/tbz/d1/D1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/d1/D1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tbz/d1/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/d1/Konto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tbz/v1/Student.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
