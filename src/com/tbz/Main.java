@@ -24,6 +24,12 @@ public class Main {
                     break;
                 case "d1":
                     new D1().Start();
+                    break;
+                case "info":
+                    System.out.println("Available commands: \nq1\nv1\nd1\ninfo");
+                    break;
+                default:
+                    System.out.println("Command not found\ntype info to see the available commands");
             }
         }
     }
