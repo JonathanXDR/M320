@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="787c2bda-9c73-430d-acc4-7a3cba1df9f5" name="Changes" comment="" />
+    <list default="true" id="787c2bda-9c73-430d-acc4-7a3cba1df9f5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/com/tbz/d1/D1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/d1/D1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tbz/d1/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/d1/Konto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tbz/v1/Student.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +13,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HfPKaRMBJ4SBdeyibeIDdyeCZI" />
   <component name="ProjectView">
@@ -68,6 +75,19 @@
   </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/tbz/v1" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\prieder\Documents\GitHub\M320-Portfolio\src\com\tbz\v1" />
+      <recent name="C:\Users\prieder\Documents\GitHub\M320-Portfolio\src\com\tbz\d1" />
+      <recent name="C:\Users\prieder\Documents\GitHub\M320-Portfolio\src\com\tbz" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
