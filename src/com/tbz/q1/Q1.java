@@ -1,4 +1,5 @@
 package com.tbz.q1;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -20,11 +21,13 @@ public class Q1 {
             }
         }
     }
-    private int getUserInput(){
+
+    private int getUserInput() {
         printMessage("Type in a number");
         return new Scanner(System.in).nextInt();
     }
-    private void printMessage(String message){
+
+    private void printMessage(String message) {
         System.out.println(message);
     }
 }
