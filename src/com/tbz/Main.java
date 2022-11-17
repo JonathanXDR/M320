@@ -1,6 +1,7 @@
 package com.tbz;
 
 import com.tbz.d1.D1;
+import com.tbz.q1.Q1;
 import com.tbz.v1.V1;
 
 import java.util.Scanner;
@@ -16,6 +17,8 @@ public class Main {
             String answer = scan.next();
 
             switch (answer) {
+                case "q1":
+                    new Q1().Start();
                 case "v1":
                     new V1().Start();
                     break;
