@@ -9,16 +9,22 @@ public class Q1 {
         Random random = new Random();
         this.random = random.nextInt(100);
         while (true) {
-            System.out.println("Type in a number");
-            int input = new Scanner(System.in).nextInt();
+            int input = getUserInput();
             if (input == this.random) {
-                System.out.println("Congrats, you guessed the number!");
+                printMessage("Congrats, you guessed the number!");
                 return;
             } else if (input > this.random) {
-                System.out.println("Guess is too big");
+                printMessage("Guess is too big");
             } else {
-                System.out.println("Guess is too small");
+                printMessage("Guess is too small");
             }
         }
+    }
+    private int getUserInput(){
+        printMessage("Type in a number");
+        return new Scanner(System.in).nextInt();
+    }
+    private void printMessage(String message){
+        System.out.println(message);
     }
 }
