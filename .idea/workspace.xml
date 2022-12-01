@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="787c2bda-9c73-430d-acc4-7a3cba1df9f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/v1/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/v1/CD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/v1/DVD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/v1/Media.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tbz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tbz/q1/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/q1/Q1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tbz/v1/V1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/v1/V1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +140,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/tbz/v1/V1.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
