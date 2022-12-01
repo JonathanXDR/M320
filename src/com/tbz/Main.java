@@ -1,6 +1,6 @@
 package com.tbz;
 
-import com.tbz.D2.D2;
+import com.tbz.d2.D2;
 import com.tbz.d1.D1;
 import com.tbz.q1.Q1;
 import com.tbz.v1.V1;

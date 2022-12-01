@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="787c2bda-9c73-430d-acc4-7a3cba1df9f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tbz/D2/D2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/d2/Flight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/d2/Passenger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tbz/D2/D2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/d2/D2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tbz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tbz/d1/D1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/d1/D1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +30,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HfPKaRMBJ4SBdeyibeIDdyeCZI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -87,12 +91,11 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/tbz/v1" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\prieder\Documents\GitHub\M320-Portfolio\src\com\tbz\v1" />
