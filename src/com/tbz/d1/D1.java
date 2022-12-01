@@ -1,7 +1,7 @@
 package com.tbz.d1;
 
 public class D1 {
-    public void Start() {
+    public  void Start() {
         Konto konto1 = new Konto(-200);
         Konto konto2 = new Konto(-300);
         Konto konto3 = new Konto(-400);

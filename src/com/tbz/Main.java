@@ -1,5 +1,6 @@
 package com.tbz;
 
+import com.tbz.D2.D2;
 import com.tbz.d1.D1;
 import com.tbz.q1.Q1;
 import com.tbz.v1.V1;
@@ -29,6 +30,9 @@ public class Main {
                         break;
                     case "d1":
                         new D1().Start();
+                        break;
+                    case "d2":
+                        new D2().Start();
                         break;
                     case "info":
                         System.out.println(YELLOW + "Available commands: \nq1\nv1\nd1\ninfo" + RESET);
