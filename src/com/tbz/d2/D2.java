@@ -13,13 +13,13 @@ public class D2 {
             if (name.equals("exit")) {
                 break;
             }
-            createPassanger(name);
+            createPassenger(name);
         } while (true);
 
         flight.displayPassengers();
     }
 
-    private void createPassanger(String name) {
+    private void createPassenger(String name) {
         Passenger passenger2 = new Passenger();
         passenger2.setName(name);
         flight.addPassenger(passenger2);

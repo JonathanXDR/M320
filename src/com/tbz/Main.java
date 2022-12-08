@@ -4,6 +4,7 @@ import com.tbz.d2.D2;
 import com.tbz.d1.D1;
 import com.tbz.q1.Q1;
 import com.tbz.v1.V1;
+import com.tbz.v2.V2;
 
 import java.util.Scanner;
 
@@ -33,6 +34,9 @@ public class Main {
                         break;
                     case "d2":
                         new D2().Start();
+                        break;
+                    case "v2":
+                        new V2().Start();
                         break;
                     case "info":
                         System.out.println(YELLOW + "Available commands: \nq1\nv1\nd1\ninfo" + RESET);
