@@ -1,34 +1,45 @@
 package com.tbz.v2;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Team {
-    private ArrayList<Player> team = new ArrayList<>();
+    private ArrayList<Player> players = new ArrayList<>();
 
     public Team(){
-        team.add(new Goalkeeper("Urs"));
+        players.add(new Goalkeeper("Urs"));
 
-        team.add(new Striker("Aron"));
-        team.add(new Striker("Boris"));
-        team.add(new Striker("Cedric"));
-        team.add(new Striker("Dennis"));
-        team.add(new Striker("Elias"));
-        team.add(new Striker("Felix"));
-        team.add(new Striker("Gustav"));
-        team.add(new Striker("Hans"));
-        team.add(new Striker("Ivan"));
-        team.add(new Striker("Johannes"));
-        team.add(new Striker("Karl"));
-        team.add(new Striker("Lukas"));
-        team.add(new Striker("Max"));
-        team.add(new Striker("Niklas"));
-        team.add(new Striker("Oskar"));
-        team.add(new Striker("Paul"));
+        players.add(new Striker("Aron"));
+        players.add(new Striker("Boris"));
+        players.add(new Striker("Cedric"));
+        players.add(new Striker("Dennis"));
+        players.add(new Striker("Elias"));
+        players.add(new Striker("Felix"));
+        players.add(new Striker("Gustav"));
+        players.add(new Striker("Hans"));
+        players.add(new Striker("Ivan"));
+        players.add(new Striker("Johannes"));
+        players.add(new Striker("Karl"));
+        players.add(new Striker("Lukas"));
+        players.add(new Striker("Max"));
+        players.add(new Striker("Niklas"));
+        players.add(new Striker("Oskar"));
+        players.add(new Striker("Paul"));
 
-        team.add(new Defender("Quentin"));
-        team.add(new Defender("Raphael"));
-        team.add(new Defender("Samuel"));
-        team.add(new Defender("Tobias"));
+        players.add(new Defender("Quentin"));
+        players.add(new Defender("Raphael"));
+        players.add(new Defender("Samuel"));
+        players.add(new Defender("Tobias"));
+    }
+
+    public ArrayList<Player> getPlayers() {
+        return players;
+    }
+    public void  displayNames() {
+        for (var player : players){
+            player.displayName();
+        }
+    }
+    public void displayText(){
+        System.out.println("old text");
     }
 }

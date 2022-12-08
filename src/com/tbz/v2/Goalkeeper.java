@@ -4,7 +4,7 @@ public class Goalkeeper extends Player{
     private double size;
 
     public Goalkeeper(String name){
-
+this.setName(name);
     }
 
     public double getSize() {

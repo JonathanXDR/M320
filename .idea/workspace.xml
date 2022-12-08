@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="787c2bda-9c73-430d-acc4-7a3cba1df9f5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tbz/v2/Defender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/v2/Defender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tbz/v2/Goalkeeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/v2/Goalkeeper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tbz/v2/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/v2/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tbz/v2/Striker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/v2/Striker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tbz/v2/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/v2/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tbz/v2/V2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/v2/V2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,16 +93,6 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\prieder\Documents\GitHub\M320-Portfolio\src\com\tbz\v1" />
