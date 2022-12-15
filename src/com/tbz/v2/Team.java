@@ -1,10 +1,19 @@
 package com.tbz.v2;
-
 import java.util.ArrayList;
-
+/**
+ Die Team Klasse stellt ein Fußballteam dar.
+ @package com.tbz.v2
+ @import java.util.ArrayList
+ */
 public class Team {
+    /**
+     * Eine Liste aller Spieler im Team.
+     */
     private ArrayList<Player> players = new ArrayList<>();
 
+    /**
+     * Konstruktor für ein neues Team. Fügt automatisch einen Torwart und eine bestimmte Anzahl von Stürmern und Verteidigern hinzu.
+     */
     public Team(){
         players.add(new Goalkeeper("Urs"));
 
@@ -31,14 +40,27 @@ public class Team {
         players.add(new Defender("Tobias"));
     }
 
+    /**
+     * Gibt eine Liste aller Spieler im Team zurück.
+     *
+     * @return die Liste aller Spieler im Team
+     */
     public ArrayList<Player> getPlayers() {
         return players;
     }
+
+    /**
+     * Gibt die Namen aller Spieler im Team auf der Konsole aus.
+     */
     public void  displayNames() {
         for (var player : players){
             player.displayName();
         }
     }
+
+    /**
+     * Gibt den Text "old text" auf der Konsole aus.
+     */
     public void displayText(){
         System.out.println("old text");
     }
