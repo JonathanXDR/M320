@@ -11,11 +11,20 @@ import java.util.Scanner;
 public class D3 {
     public void Start() {
 
-        String fileContent = FileHandler.getFileContent();
+        try {
+            FileHandler fileHandler = new FileHandler();
 
-        FileHandler fileHandler = new FileHandler();
+            fileHandler.getFileContent();
 
-        String fileContent1 = fileHandler.getFileContent();
+            String fileContent = fileHandler.getFileContent();
+
+            fileContent+= "";
+
+
+        }catch (IOException e){
+            System.out.println(e.getMessage());
+        }
+
 
     }
 }

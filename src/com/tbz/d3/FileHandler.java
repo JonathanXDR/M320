@@ -12,12 +12,13 @@ public class FileHandler {
     private static Path appdata = Paths.get(System.getenv("APPDATA"), "D3");
     private static File _file;
 
-    public FileHandler() throws IOException{
+    public FileHandler() throws IOException {
         Files.createDirectories(appdata);
 
-       _file =  createFileIfNotExist();
+        _file = createFileIfNotExist();
     }
-    private File createFileIfNotExist() throws IOException{
+
+    private File createFileIfNotExist() throws IOException {
         Path d3 = Paths.get(appdata.toString(), "values.json");
         File file = new File(d3.toUri().getPath());
         if (!file.exists())
@@ -27,9 +28,15 @@ public class FileHandler {
 
     public String getFileContent() throws IOException {
 
-        Scanner scanner = null;
-        scanner = new Scanner(_file);
+        Scanner scanner = new Scanner(_file);
 
-        return "Not Implemented";
+
+        String fileText = "";
+        // return "Not Implemented";
+
+        while (scanner.hasNextLine()) {
+            fileText += scanner.nextLine();
+        }
+        return fileText;
     }
 }
