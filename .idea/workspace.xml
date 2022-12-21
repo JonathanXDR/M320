@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="787c2bda-9c73-430d-acc4-7a3cba1df9f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/ejlchina_data_gson.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/google_code_gson.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/d3/Grade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/d3/GradeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/d3/Subject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M320-Portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/M320-Portfolio.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tbz/d3/D3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/d3/D3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tbz/d3/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/d3/FileHandler.java" afterDir="false" />
     </list>
@@ -23,6 +29,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/FileHandler.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/D3.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/GradeHandler.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/Grade.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/Subject.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -89,6 +102,17 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\prieder\Documents\GitHub\M320-Portfolio\src\com\tbz\v1" />
@@ -149,13 +173,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/tbz/d3/D3.java</url>
-          <line>27</line>
+          <line>13</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/tbz/d3/D3.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

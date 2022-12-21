@@ -10,21 +10,27 @@ import java.util.Scanner;
 
 public class D3 {
     public void Start() {
+        GradeHandler gradeHandler =  new GradeHandler();
 
-        try {
-            FileHandler fileHandler = new FileHandler();
+        while (true){
 
-            fileHandler.getFileContent();
+            System.out.println("Type command");
+            Scanner scanner = new Scanner(System.in);
+            String command = scanner.nextLine();
 
-            String fileContent = fileHandler.getFileContent();
+            if (command.equals("exit")){
+                break;
+            }
 
-            fileContent+= "";
-
-
-        }catch (IOException e){
-            System.out.println(e.getMessage());
+            switch (command){
+                case "save":
+                    gradeHandler.saveSubjects();
+                    break;                    
+                default:
+                    System.out.println("Not Found");
+                    break;
+            }
         }
-
-
+        gradeHandler.saveSubjects();
     }
 }
