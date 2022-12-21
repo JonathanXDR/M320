@@ -6,4 +6,8 @@ import java.util.ArrayList;
 public class Subject {
     private String name;
     ArrayList<Grade> marks = new ArrayList<Grade>();
+
+    public String getName() {
+        return name;
+    }
 }

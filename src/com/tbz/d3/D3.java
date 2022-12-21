@@ -6,26 +6,33 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class D3 {
     public void Start() {
-        GradeHandler gradeHandler =  new GradeHandler();
+        GradeHandler gradeHandler = new GradeHandler();
 
-        while (true){
+        while (true) {
 
             System.out.println("Type command");
             Scanner scanner = new Scanner(System.in);
             String command = scanner.nextLine();
 
-            if (command.equals("exit")){
+            if (command.equals("exit")) {
                 break;
             }
 
-            switch (command){
+            switch (command) {
                 case "save":
                     gradeHandler.saveSubjects();
-                    break;                    
+                    break;
+                case "subjects":
+                    ArrayList<String> subjects = gradeHandler.getSubjects();
+                    for (String subject : subjects) {
+                        System.out.println(subject);
+                    }
+                    break;
                 default:
                     System.out.println("Not Found");
                     break;

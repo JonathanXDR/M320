@@ -26,5 +26,12 @@ public class GradeHandler {
         String fileContent = new Gson().toJson(subjects);
         fileHandler.setFileContent(fileContent);
     }
+    public ArrayList<String> getSubjects() {
+        ArrayList<String> subjectNames = new ArrayList<String>();
+        for (var subject : subjects) {
+            subjectNames.add(subject.getName());
+        }
+        return subjectNames;
+    }
 
 }
