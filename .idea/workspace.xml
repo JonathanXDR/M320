@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="787c2bda-9c73-430d-acc4-7a3cba1df9f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/d3/CommandNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tbz/d3/D3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/d3/D3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tbz/d3/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/d3/Grade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tbz/d3/GradeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/d3/GradeHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tbz/d3/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/d3/Subject.java" afterDir="false" />
     </list>
@@ -170,11 +172,6 @@
           <url>file://$PROJECT_DIR$/src/com/tbz/d3/D3.java</url>
           <line>14</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/tbz/d3/GradeHandler.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

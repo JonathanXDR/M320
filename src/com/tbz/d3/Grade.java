@@ -2,8 +2,8 @@ package com.tbz.d3;
 
 public class Grade {
     private String name;
-    private int grade;
-    private int weight;
+    private float grade;
+    private float weight;
 
     public Grade(String name, int grade, int weight) {
         this.name = name;
@@ -15,11 +15,11 @@ public class Grade {
         return name;
     }
 
-    public int getGrade() {
+    public float getGrade() {
         return grade;
     }
 
-    public int getWeight() {
+    public float getWeight() {
         return weight;
     }
 }

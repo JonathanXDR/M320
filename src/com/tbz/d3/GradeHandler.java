@@ -1,6 +1,7 @@
 package com.tbz.d3;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -15,7 +16,8 @@ public class GradeHandler {
         try {
             fileHandler = new FileHandler();
             String fileContent = fileHandler.getFileContent();
-            subjects = new Gson().fromJson(fileContent, subjects.getClass());
+
+            subjects = new Gson().fromJson(fileContent, new TypeToken<ArrayList<Subject>>(){}.getType());
 
         }catch (IOException e){
             System.out.println(e.getMessage());

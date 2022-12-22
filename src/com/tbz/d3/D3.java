@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class D3 {
-    public void Start() {
+    public void Start() throws CommandNotFoundException {
         GradeHandler gradeHandler = new GradeHandler();
 
         while (true) {
@@ -34,8 +34,7 @@ public class D3 {
                     }
                     break;
                 default:
-                    System.out.println("Not Found");
-                    break;
+                    throw new CommandNotFoundException(command + " is not a valid command");
             }
         }
         gradeHandler.saveSubjects();
