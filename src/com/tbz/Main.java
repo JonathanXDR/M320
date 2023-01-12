@@ -4,6 +4,7 @@ import com.tbz.d2.D2;
 import com.tbz.d1.D1;
 import com.tbz.d3.D3;
 import com.tbz.q1.Q1;
+import com.tbz.q3.TUI;
 import com.tbz.v1.V1;
 import com.tbz.v2.V2;
 import com.tbz.v3.V3;
@@ -46,13 +47,16 @@ public class Main {
                     case "v3":
                         new V3().Start();
                         break;
+                    case "q3":
+                        TUI.getInstance().start();
+                        break;
                     case "info":
                         System.out.println(YELLOW + "Available commands: \nq1\nv1\nd1\ninfo" + RESET);
                         break;
                     default:
                         System.out.println(RED + "Command not found " + YELLOW + "\ntype info to see the available commands" + RESET);
                 }
-            }catch (Exception ex){
+            } catch (Exception ex) {
                 System.out.println(YELLOW + "An Exception occurred" + RESET);
                 System.out.println(RED + ex + RESET);
             }
