@@ -8,7 +8,7 @@ class Portfolio {
     private StockExchange stockExchange;
 
     public Portfolio(StockExchange stockExchange) {
-        stocks = new ArrayList<>();
+        this.stocks = new ArrayList<>();
         this.stockExchange = stockExchange;
     }
 
