@@ -1,7 +1,7 @@
 package com.tbz.v3;
 
 public class V3 {
-        public static void main(String[] args) {
+    public void Start() {
             Portfolio portfolio = new Portfolio(new NYSE());
             portfolio.addStock("Microsoft");
             portfolio.addStock("Google");
@@ -11,5 +11,5 @@ public class V3 {
             portfolio.addStock("Microsoft");
             portfolio.addStock("Google");
             System.out.println("Total value (SIX): " + portfolio.getTotalValue());
-        }
+    }
 }
