@@ -4,7 +4,6 @@ import com.tbz.d2.D2;
 import com.tbz.d1.D1;
 import com.tbz.d3.D3;
 import com.tbz.q1.Q1;
-import com.tbz.q3.review.Q3;
 import com.tbz.v1.V1;
 import com.tbz.v2.V2;
 import com.tbz.v3.V3;
@@ -48,7 +47,19 @@ public class Main {
                         new V3().Start();
                         break;
                     case "q3":
-                        Q3.Start();
+                        System.out.println("Which q3 would you like to run? (review or testing)");
+                        String q3Answer = scan.next();
+                        switch (q3Answer) {
+                            case "review":
+                                new com.tbz.q3.review.Q3().Start();
+                                break;
+                            case "testing":
+                                new com.tbz.q3.testing.Q3().Start();
+                                break;
+                            default:
+                                System.out.println(RED + "Invalid input" + RESET);
+                                break;
+                        }
                         break;
                     case "info":
                         System.out.println(YELLOW + "Available commands: \nq1\nv1\nd1\ninfo" + RESET);
