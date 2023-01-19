@@ -4,7 +4,7 @@ import com.tbz.d2.D2;
 import com.tbz.d1.D1;
 import com.tbz.d3.D3;
 import com.tbz.q1.Q1;
-import com.tbz.q3.TUI;
+import com.tbz.q3.Q3;
 import com.tbz.v1.V1;
 import com.tbz.v2.V2;
 import com.tbz.v3.V3;
@@ -48,7 +48,7 @@ public class Main {
                         new V3().Start();
                         break;
                     case "q3":
-                        TUI.getInstance().start();
+                        Q3.Start();
                         break;
                     case "info":
                         System.out.println(YELLOW + "Available commands: \nq1\nv1\nd1\ninfo" + RESET);
