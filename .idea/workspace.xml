@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="787c2bda-9c73-430d-acc4-7a3cba1df9f5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/diagrams/M3.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/diagrams/M3.drawio" afterDir="false" />
+    <list default="true" id="4b88acc3-0648-479c-b6f6-16a575f60f6a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/projektauftrag/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/q3/testing/FriendshipsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M320-Portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/M320-Portfolio.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tbz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="xml" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -33,10 +37,11 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/D3.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/FileHandler.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/Grade.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/D3.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/GradeHandler.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/Grade.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/out/production/M320-Portfolio/com/tbz/d1/SaldoToLowException.class" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/Subject.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -104,6 +109,12 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\prieder\Documents\GitHub\M320-Portfolio\src\com\tbz\v1" />
@@ -111,10 +122,12 @@
       <recent name="C:\Users\prieder\Documents\GitHub\M320-Portfolio\src\com\tbz" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\prieder\Documents\GitHub\M320-Portfolio\src\com\tbz\q3\testing" />
+      <recent name="C:\Users\prieder\Documents\GitHub\M320-Portfolio\out\production\M320-Portfolio\com\tbz\q3\testing" />
       <recent name="C:\Users\prieder\Documents\GitHub\M320-Portfolio\src\com\tbz\q3" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.tbz.Main" />
       <module name="M320-Portfolio" />
@@ -125,21 +138,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FriendshipsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="M320-Portfolio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tbz.q3.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tbz.q3.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.tbz.q3.testing.FriendshipsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.FriendshipsTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="787c2bda-9c73-430d-acc4-7a3cba1df9f5" name="Changes" comment="" />
+      <changelist id="4b88acc3-0648-479c-b6f6-16a575f60f6a" name="Changes" comment="" />
       <created>1668673104905</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668673104905</updated>
       <workItem from="1670485106507" duration="1499000" />
+      <workItem from="1674123998314" duration="147000" />
+      <workItem from="1674717116672" duration="834000" />
     </task>
     <servers />
   </component>
