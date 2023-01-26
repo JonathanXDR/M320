@@ -7,6 +7,7 @@ import com.tbz.q1.Q1;
 import com.tbz.v1.V1;
 import com.tbz.v2.V2;
 import com.tbz.v3.V3;
+import com.tbz.project.Project;
 
 import java.util.Scanner;
 
@@ -60,6 +61,9 @@ public class Main {
                                 System.out.println(RED + "Invalid input" + RESET);
                                 break;
                         }
+                        break;
+                    case "project":
+                        new Project().Start();
                         break;
                     case "info":
                         System.out.println(YELLOW + "Available commands: \nq1\nv1\nd1\ninfo" + RESET);

@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b88acc3-0648-479c-b6f6-16a575f60f6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tbz/projektauftrag/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tbz/q3/testing/FriendshipsTest.java" afterDir="false" />
+    <list default="true" id="787c2bda-9c73-430d-acc4-7a3cba1df9f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/project/Ingredients.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/project/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/project/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/project/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/project/Project.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M320-Portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/M320-Portfolio.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tbz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,12 +111,16 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\prieder\Documents\GitHub\M320-Portfolio\src\com\tbz\v1" />
@@ -169,8 +175,8 @@
       <option name="presentableId" value="Default" />
       <updated>1668673104905</updated>
       <workItem from="1670485106507" duration="1499000" />
-      <workItem from="1674123998314" duration="147000" />
-      <workItem from="1674717116672" duration="834000" />
+      <workItem from="1674717411518" duration="142000" />
+      <workItem from="1674717598459" duration="2504000" />
     </task>
     <servers />
   </component>
