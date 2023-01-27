@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="787c2bda-9c73-430d-acc4-7a3cba1df9f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tbz/project/Ingredients.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tbz/project/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tbz/project/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tbz/project/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tbz/project/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/project/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/project/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/project/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/project/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tbz/project/OrderManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tbz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tbz/project/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/project/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tbz/project/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/project/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tbz/project/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tbz/project/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbz/project/Project.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +42,11 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/FileHandler.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/D3.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/GradeHandler.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/Grade.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/out/production/M320-Portfolio/com/tbz/d1/SaldoToLowException.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/D3.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/FileHandler.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/Grade.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/GradeHandler.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/com/tbz/d3/Subject.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -111,16 +114,16 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\prieder\Documents\GitHub\M320-Portfolio\src\com\tbz\v1" />
