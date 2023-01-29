@@ -54,9 +54,7 @@ public class Main {
                             case "review":
                                 new com.tbz.q3.review.Q3().Start();
                                 break;
-                            case "testing":
-                                new com.tbz.q3.testing.Q3().Start();
-                                break;
+
                             default:
                                 System.out.println(RED + "Invalid input" + RESET);
                                 break;
