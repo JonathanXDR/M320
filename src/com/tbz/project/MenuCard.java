@@ -1,6 +1,7 @@
 package com.tbz.project;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class MenuCard {
@@ -24,40 +25,35 @@ public class MenuCard {
         toppings.put("Sauce", new Topping("Sauce", 0.50));
         toppings.put("Zwiebeln", new Topping("Zwiebeln", 0.50));
 
-        products.put("Pizza", new Product("Pizza", 5.00, new ArrayList<Topping>() {
-            {
-                toppings.get("Salat");
-                toppings.get("Tomate");
-                toppings.get("Käse");
-                toppings.get("Zwiebeln");
-            }
-        }));
-        products.put("Burger", new Product("Burger", 5.00, new ArrayList<Topping>() {
-            {
-                toppings.get("Salat");
-                toppings.get("Tomate");
-                toppings.get("Käse");
-                toppings.get("Sauce");
-                toppings.get("Zwiebeln");
-            }
-        }));
-        products.put("Döner", new Product("Döner", 5.00, new ArrayList<Topping>() {
-            {
-                toppings.get("Salat");
-                toppings.get("Tomate");
-                toppings.get("Käse");
-                toppings.get("Sauce");
-                toppings.get("Zwiebeln");
-            }
-        }));
-        products.put("Salat", new Product("Salat", 3.00, new ArrayList<Topping>(){
-            {
-                toppings.get("Tomate");
-                toppings.get("Käse");
-                toppings.get("Sauce");
-                toppings.get("Zwiebeln");
-            }
-        }));
+        products.put("Pizza", new Product("Pizza", 5.00, new ArrayList<Topping>(Arrays.asList(
+                toppings.get("Salat"),
+                toppings.get("Tomate"),
+                toppings.get("Käse"),
+                toppings.get("Zwiebeln")
+        ))));
+        products.put("Burger", new Product("Burger", 5.00, new ArrayList<Topping>(Arrays.asList(
+                toppings.get("Salat"),
+                toppings.get("Tomate"),
+                toppings.get("Käse"),
+                toppings.get("Sauce"),
+                toppings.get("Zwiebeln")
+        ))));
+
+        products.put("Döner", new Product("Döner", 5.00, new ArrayList<Topping>(Arrays.asList(
+                toppings.get("Salat"),
+                toppings.get("Tomate"),
+                toppings.get("Käse"),
+                toppings.get("Sauce"),
+                toppings.get("Zwiebeln")
+        ))));
+
+        products.put("Salat", new Product("Salat", 3.00, new ArrayList<Topping>(Arrays.asList(
+                toppings.get("Tomate"),
+                toppings.get("Käse"),
+                toppings.get("Sauce"),
+                toppings.get("Zwiebeln")
+        ))));
+
         products.put("Cola", new Product("Cola", 2.00));
         products.put("Fanta", new Product("Fanta", 2.00));
         products.put("Wasser", new Product("Wasser", 1.00));

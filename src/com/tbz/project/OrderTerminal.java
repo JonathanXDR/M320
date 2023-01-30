@@ -9,6 +9,14 @@ public class OrderTerminal {
 
     public void Start() {
         System.out.println("Welcome to the Order Terminal");
+        System.out.println("On the menu today:");
+        System.out.println("------------------");
+        var todaysMenu = MenuCard.getInstance().getProducts();
+        for (var product : todaysMenu)
+            System.out.println(product.getName());
+        System.out.println("------------------");
+
+
 
         Scanner scanner = new Scanner(System.in);
 
@@ -18,14 +26,14 @@ public class OrderTerminal {
             System.out.println("Please select an option:");
             System.out.println("1. Add Item");
             System.out.println("2. Go to Payment");
-            System.out.println("3. Exit");
+            System.out.println("3. Abort Order");
 
             int option = scanner.nextInt();
 
             switch (option) {
                 case 1:
                     // List available products
-                    var availableProducts = printProducts();
+                    var availableProducts = printAvailableProducts();
 
                     // Select product
                     int input = scanner.nextInt();
@@ -37,7 +45,7 @@ public class OrderTerminal {
                             for (int i = 0; i < availableToppings.size(); i++) {
                                 System.out.println((i + 1) + ". " + selectedProduct.getAvailableToppings().get(i).getName());
                             }
-                            System.out.println(availableToppings.size() + ". Done");
+                            System.out.println((availableToppings.size() + 1) + ". No more toppings");
 
                             // Select toppings
                             int toppingInput = scanner.nextInt();
@@ -80,12 +88,15 @@ public class OrderTerminal {
             System.out.println("-----------------------");
             for (Product product : products) {
                 System.out.println(product.getName());
+                for (Topping topping : product.toppings) {
+                    System.out.println(" - " + topping.getName());
+                }
             }
             System.out.println("-----------------------");
         }
     }
 
-    private ArrayList<Product> printProducts() {
+    private ArrayList<Product> printAvailableProducts() {
         System.out.println("Available Products are:");
         ArrayList<Product> availableProducts = MenuCard.getInstance().getProducts();
         for (int i = 0; i < availableProducts.size(); i++) {
