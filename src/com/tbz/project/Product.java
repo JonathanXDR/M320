@@ -1,27 +1,40 @@
 package com.tbz.project;
 
-public class Product extends Item {
-    private String bread;
-    private String filling;
-    private String sauce;
+import java.util.ArrayList;
+import java.util.HashMap;
 
-    public Product(String name, double price, String bread, String filling, String sauce) {
-        super(name, price);
-        this.bread = bread;
-        this.filling = filling;
-        this.sauce = sauce;
+public class Product {
+    private String name;
+    private double price;
+    ArrayList<Topping> availableToppings = new ArrayList<>();
+    ArrayList<Topping> toppings = new ArrayList<>();
+
+    public Product(String name, double price, ArrayList<Topping> toppings) {
+        this.name = name;
+        this.price = price;
+        this.availableToppings = toppings;
     }
 
-    public String getBread() {
-        return bread;
+    public Product(String name, double price) {
+        this.name = name;
+        this.price = price;
     }
 
-    public String getFilling() {
-        return filling;
+    public String getName() {
+        return name;
     }
 
-    public String getSauce() {
-        return sauce;
+    public double getPrice() {
+        return price;
+    }
+    public boolean hasAvailableToppings() {
+        return availableToppings.size() > 0;
+    }
+
+    public ArrayList<Topping> getAvailableToppings() {
+        return availableToppings;
+    }
+    public void addTopping(Topping topping) {
+        toppings.add(topping);
     }
 }
-

@@ -3,11 +3,12 @@ package com.tbz;
 import com.tbz.d2.D2;
 import com.tbz.d1.D1;
 import com.tbz.d3.D3;
+import com.tbz.project.OrderTerminal;
 import com.tbz.q1.Q1;
 import com.tbz.v1.V1;
 import com.tbz.v2.V2;
 import com.tbz.v3.V3;
-import com.tbz.project.Project;
+import com.tbz.project.v1.Project;
 
 import java.util.Scanner;
 
@@ -61,7 +62,7 @@ public class Main {
                         }
                         break;
                     case "project":
-                        new Project().Start();
+                        new OrderTerminal().Start();
                         break;
                     case "info":
                         System.out.println(YELLOW + "Available commands: \nq1\nv1\nd1\ninfo" + RESET);

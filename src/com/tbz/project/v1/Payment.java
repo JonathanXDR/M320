@@ -1,4 +1,4 @@
-package com.tbz.project;
+package com.tbz.project.v1;
 
 public class Payment {
     private double balance;
