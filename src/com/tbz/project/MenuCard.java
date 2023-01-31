@@ -25,21 +25,13 @@ public class MenuCard {
         toppings.put("Sauce", new Topping("Sauce", 0.50));
         toppings.put("Zwiebeln", new Topping("Zwiebeln", 0.50));
 
-        products.put("Pizza", new Product("Pizza", 5.00, new ArrayList<Topping>(Arrays.asList(
+        products.put("Pizza", new Meal("Pizza", 5.00, new ArrayList<Topping>(Arrays.asList(
                 toppings.get("Salat"),
                 toppings.get("Tomate"),
                 toppings.get("Käse"),
                 toppings.get("Zwiebeln")
         ))));
-        products.put("Burger", new Product("Burger", 5.00, new ArrayList<Topping>(Arrays.asList(
-                toppings.get("Salat"),
-                toppings.get("Tomate"),
-                toppings.get("Käse"),
-                toppings.get("Sauce"),
-                toppings.get("Zwiebeln")
-        ))));
-
-        products.put("Döner", new Product("Döner", 5.00, new ArrayList<Topping>(Arrays.asList(
+        products.put("Burger", new Meal("Burger", 5.00, new ArrayList<Topping>(Arrays.asList(
                 toppings.get("Salat"),
                 toppings.get("Tomate"),
                 toppings.get("Käse"),
@@ -47,17 +39,25 @@ public class MenuCard {
                 toppings.get("Zwiebeln")
         ))));
 
-        products.put("Salat", new Product("Salat", 3.00, new ArrayList<Topping>(Arrays.asList(
+        products.put("Döner", new Meal("Döner", 5.00, new ArrayList<Topping>(Arrays.asList(
+                toppings.get("Salat"),
                 toppings.get("Tomate"),
                 toppings.get("Käse"),
                 toppings.get("Sauce"),
                 toppings.get("Zwiebeln")
         ))));
 
-        products.put("Cola", new Product("Cola", 2.00));
-        products.put("Fanta", new Product("Fanta", 2.00));
-        products.put("Wasser", new Product("Wasser", 1.00));
-        products.put("Bier", new Product("Bier", 3.00));
+        products.put("Salat", new Meal("Salat", 3.00, new ArrayList<Topping>(Arrays.asList(
+                toppings.get("Tomate"),
+                toppings.get("Käse"),
+                toppings.get("Sauce"),
+                toppings.get("Zwiebeln")
+        ))));
+
+        products.put("Cola", new Drink("Cola", 2.00));
+        products.put("Fanta", new Drink("Fanta", 2.00));
+        products.put("Wasser", new Drink("Wasser", 1.00));
+        products.put("Bier", new Drink("Bier", 3.00));
     }
 
     public ArrayList<Topping> getToppings() {
@@ -65,6 +65,6 @@ public class MenuCard {
     }
 
     public ArrayList<Product> getProducts() {
-        return new ArrayList<Product>(products.values());
+        return new ArrayList<>(Arrays.asList(products.values().toArray(Product[]::new)));
     }
 }

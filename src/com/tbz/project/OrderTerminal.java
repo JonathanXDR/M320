@@ -32,12 +32,13 @@ public class OrderTerminal {
                     int input = readInt("", 1, availableProducts.size());
                     Product selectedProduct = availableProducts.get(input - 1);
 
-                    if (selectedProduct.hasAvailableToppings()) {
+                    if (selectedProduct.getClass() == Meal.class && ((Meal) selectedProduct).hasAvailableToppings()) {
+                        var selectedMeal = (Meal) selectedProduct;
                         System.out.println("Toppings:");
-                        var availableToppings = selectedProduct.getAvailableToppings();
+                        var availableToppings = selectedMeal.getAvailableToppings();
                         while (true) {
                             for (int i = 0; i < availableToppings.size(); i++) {
-                                System.out.println((i + 1) + ". " + selectedProduct.getAvailableToppings().get(i).getName());
+                                System.out.println((i + 1) + ". " + selectedMeal.getAvailableToppings().get(i).getName());
                             }
                             System.out.println((availableToppings.size() + 1) + ". No more toppings");
 
@@ -47,28 +48,28 @@ public class OrderTerminal {
                                 break;
                             }
                             Topping selectedTopping = availableToppings.get(toppingInput - 1);
-                            selectedProduct.addTopping(selectedTopping);
-
-                            //Remove added Topping from available Toppings
-                            availableToppings.remove(selectedTopping);
-
+                            selectedMeal.addTopping(selectedTopping);
                         }
+                        products.add(selectedMeal);
+
+                    }else{
                         // Add product to order
                         products.add(selectedProduct);
                     }
 
+
                     System.out.println("Product added!");
                     break;
-                    case 2:
-                        // Remove product from order
-                        // Print all products
-                        for(int i = 0; i < products.size(); i++) {
-                            System.out.println((i + 1) + ". " + products.get(i).getName());
-                        }
-                        // Select product
-                        int removeInput = readInt("Select Product that you want to remove", 1, products.size());
-                        products.remove(removeInput - 1);
-                        break;
+                case 2:
+                    // Remove product from order
+                    // Print all products
+                    for (int i = 0; i < products.size(); i++) {
+                        System.out.println((i + 1) + ". " + products.get(i).getName());
+                    }
+                    // Select product
+                    int removeInput = readInt("Select Product that you want to remove", 1, products.size());
+                    products.remove(removeInput - 1);
+                    break;
                 case 3:
                     // Go to payment
                     var totalPrice = printOrder();
@@ -112,9 +113,12 @@ public class OrderTerminal {
             for (Product product : products) {
                 System.out.println(product.getName() + " " + product.getPrice() + " CHF");
                 totalPrice += product.getPrice();
-                for (Topping topping : product.toppings) {
-                    System.out.println(" - " + topping.getName() + " " + topping.getPrice() + " CHF");
-                    totalPrice += topping.getPrice();
+                if(product.getClass() == Meal.class){
+                    var meal = (Meal) product;
+                    for (Topping topping : meal.getToppings()) {
+                        System.out.println(" - " + topping.getName() + " " + topping.getPrice() + " CHF");
+                        totalPrice += topping.getPrice();
+                    }
                 }
             }
             System.out.println("Total: " + totalPrice + " CHF");
