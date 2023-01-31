@@ -74,7 +74,7 @@ public class OrderTerminal {
                     // Go to payment
                     var totalPrice = printOrder();
                     if (totalPrice > 0) {
-                        System.out.println("Please pay " + totalPrice + "€");
+                        System.out.println("Please pay " + totalPrice + " CHF");
                     } else {
                         System.out.println("You have nothing to pay!");
                     }
