@@ -10,7 +10,7 @@ public class OrderTerminal {
 
     public void Start() {
         System.out.println("Welcome to the Order Terminal");
-        printMenue();
+        printMenu();
 
         while (true) {
             printOrder();
@@ -110,7 +110,7 @@ public class OrderTerminal {
         var availableToppings = meal.getAvailableToppings();
         while (true) {
             for (int i = 0; i < availableToppings.size(); i++) {
-                System.out.println((i + 1) + ". " + meal.getAvailableToppings().get(i).getName());
+                System.out.println((i + 1) + ". " + availableToppings.get(i).getName());
             }
             System.out.println((availableToppings.size() + 1) + ". No more toppings");
 
@@ -135,7 +135,7 @@ public class OrderTerminal {
 
     }
 
-    private void printMenue() {
+    private void printMenu() {
         System.out.println("------------------");
         System.out.println("On the menu today:");
         var todaysMenu = MenuCard.getInstance().getProducts();
