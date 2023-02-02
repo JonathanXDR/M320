@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Product {
-    private String name;
-    private double price;
+    private final String name;
+    private final double price;
 
     public Product(String name, double price) {
         this.name = name;

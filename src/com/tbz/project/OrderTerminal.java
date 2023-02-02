@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class OrderTerminal {
 
-    private ArrayList<Product> products = new ArrayList<>();
+    private final ArrayList<Product> products = new ArrayList<>();
     Scanner scanner = new Scanner(System.in);
 
     public void Start() {
