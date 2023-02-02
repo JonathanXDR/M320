@@ -28,4 +28,7 @@ public class Meal extends Product {
         return toppings;
     }
 
+    public void setToppings(ArrayList<Topping> toppings) {
+        this.toppings = toppings;
+    }
 }

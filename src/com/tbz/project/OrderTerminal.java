@@ -30,8 +30,9 @@ public class OrderTerminal {
 
                     if (selectedProduct.getClass() == Meal.class && ((Meal) selectedProduct).hasAvailableToppings()) {
                         var selectedMeal = (Meal) selectedProduct;
-                        var mealWithToppings = getToppings(selectedMeal);
-                        products.add(mealWithToppings);
+                        var toppings = askForToppings(selectedMeal);
+                        selectedMeal.setToppings(toppings);
+                        products.add(selectedMeal);
 
                     } else {
                         // Add product to order
@@ -72,14 +73,39 @@ public class OrderTerminal {
     private void removeProduct() {
         // Print all products
         for (int i = 0; i < products.size(); i++) {
-            System.out.println((i + 1) + ". " + products.get(i).getName());
+            var product = products.get(i);
+
+            if (product.getClass() == Meal.class && ((Meal) product).hasAvailableToppings()) {
+                var meal = (Meal) product;
+               var toppingString = getToppingsString(meal.getToppings());
+
+                System.out.println((i + 1) + ". " + product.getName() +" " + toppingString);
+            }
+            else{
+                System.out.println((i + 1) + ". " + product.getName());
+
+            }
         }
         // Select product
         int removeInput = readInt("Select Product that you want to remove", 1, products.size());
         products.remove(removeInput - 1);
     }
 
-    private Meal getToppings(Meal meal) {
+
+    private String getToppingsString(ArrayList<Topping> toppingList) {
+        String toppingString = "(";
+        for (int i = 0; i < toppingList.size(); i++) {
+            toppingString += toppingList.get(i).getName();
+            if(i < toppingList.size() - 1){
+                toppingString +=  ", ";
+            }
+        }
+        return toppingString + ")";
+    }
+
+    private ArrayList<Topping> askForToppings(Meal meal) {
+        ArrayList<Topping> selectedToppings = new ArrayList<>();
+
         System.out.println("Toppings:");
         var availableToppings = meal.getAvailableToppings();
         while (true) {
@@ -94,8 +120,10 @@ public class OrderTerminal {
                 break;
             }
             Topping selectedTopping = availableToppings.get(toppingInput - 1);
-            meal.addTopping(selectedTopping);
+            selectedToppings.add(selectedTopping);
+            availableToppings.remove(selectedTopping);
         }
+        return selectedToppings;
     }
 
     private void printOptions() {
