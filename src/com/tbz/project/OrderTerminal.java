@@ -15,11 +15,7 @@ public class OrderTerminal {
         while (true) {
             printOrder();
 
-            System.out.println("Please select an option:");
-            System.out.println("1. Add Item");
-            System.out.println("2. Remove Item");
-            System.out.println("3. Go to Payment");
-            System.out.println("4. Abort Order");
+            printOptions();
 
             int option = readInt("", 1, 4);
 
@@ -34,51 +30,20 @@ public class OrderTerminal {
 
                     if (selectedProduct.getClass() == Meal.class && ((Meal) selectedProduct).hasAvailableToppings()) {
                         var selectedMeal = (Meal) selectedProduct;
-                        System.out.println("Toppings:");
-                        var availableToppings = selectedMeal.getAvailableToppings();
-                        while (true) {
-                            for (int i = 0; i < availableToppings.size(); i++) {
-                                System.out.println((i + 1) + ". " + selectedMeal.getAvailableToppings().get(i).getName());
-                            }
-                            System.out.println((availableToppings.size() + 1) + ". No more toppings");
+                        var mealWithToppings = getToppings(selectedMeal);
+                        products.add(mealWithToppings);
 
-                            // Select toppings
-                            int toppingInput = readInt("Please select toppings", 1, availableToppings.size() + 1);
-                            if (toppingInput == availableToppings.size() + 1) {
-                                break;
-                            }
-                            Topping selectedTopping = availableToppings.get(toppingInput - 1);
-                            selectedMeal.addTopping(selectedTopping);
-                        }
-                        products.add(selectedMeal);
-
-                    }else{
+                    } else {
                         // Add product to order
                         products.add(selectedProduct);
                     }
-
-
                     System.out.println("Product added!");
                     break;
                 case 2:
-                    // Remove product from order
-                    // Print all products
-                    for (int i = 0; i < products.size(); i++) {
-                        System.out.println((i + 1) + ". " + products.get(i).getName());
-                    }
-                    // Select product
-                    int removeInput = readInt("Select Product that you want to remove", 1, products.size());
-                    products.remove(removeInput - 1);
+                    removeProduct();
                     break;
                 case 3:
-                    // Go to payment
-                    var totalPrice = printOrder();
-                    if (totalPrice > 0) {
-                        System.out.println("Please pay " + totalPrice + " CHF");
-                    } else {
-                        System.out.println("You have nothing to pay!");
-                    }
-                    System.out.println("Thank you for your order!");
+                    checkoutOrder();
                     return;
                 case 4:
                     // Exit
@@ -93,6 +58,54 @@ public class OrderTerminal {
 
     }
 
+    private void checkoutOrder() {
+        // Go to payment
+        var totalPrice = printOrder();
+        if (totalPrice > 0) {
+            System.out.println("Please pay " + totalPrice + " CHF");
+        } else {
+            System.out.println("You have nothing to pay!");
+        }
+        System.out.println("Thank you for your order!");
+    }
+
+    private void removeProduct() {
+        // Print all products
+        for (int i = 0; i < products.size(); i++) {
+            System.out.println((i + 1) + ". " + products.get(i).getName());
+        }
+        // Select product
+        int removeInput = readInt("Select Product that you want to remove", 1, products.size());
+        products.remove(removeInput - 1);
+    }
+
+    private Meal getToppings(Meal meal) {
+        System.out.println("Toppings:");
+        var availableToppings = meal.getAvailableToppings();
+        while (true) {
+            for (int i = 0; i < availableToppings.size(); i++) {
+                System.out.println((i + 1) + ". " + meal.getAvailableToppings().get(i).getName());
+            }
+            System.out.println((availableToppings.size() + 1) + ". No more toppings");
+
+            // Select toppings
+            int toppingInput = readInt("Please select toppings", 1, availableToppings.size() + 1);
+            if (toppingInput == availableToppings.size() + 1) {
+                break;
+            }
+            Topping selectedTopping = availableToppings.get(toppingInput - 1);
+            meal.addTopping(selectedTopping);
+        }
+    }
+
+    private void printOptions() {
+        System.out.println("Please select an option:");
+        System.out.println("1. Add Item");
+        System.out.println("2. Remove Item");
+        System.out.println("3. Go to Payment");
+        System.out.println("4. Abort Order");
+
+    }
 
     private void printMenue() {
         System.out.println("------------------");
@@ -113,7 +126,7 @@ public class OrderTerminal {
             for (Product product : products) {
                 System.out.println(product.getName() + " " + product.getPrice() + " CHF");
                 totalPrice += product.getPrice();
-                if(product.getClass() == Meal.class){
+                if (product.getClass() == Meal.class) {
                     var meal = (Meal) product;
                     for (Topping topping : meal.getToppings()) {
                         System.out.println(" - " + topping.getName() + " " + topping.getPrice() + " CHF");
