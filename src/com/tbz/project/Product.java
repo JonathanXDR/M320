@@ -1,7 +1,5 @@
 package com.tbz.project;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Product {
     private final String name;
