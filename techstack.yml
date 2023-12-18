@@ -1,0 +1,29 @@
+repo_name: JonathanXDR/M320-Portfolio
+report_id: 9faf6ab2bac61e95e13d8117f7dc0298
+version: 0.1
+repo_type: Public
+timestamp: '2023-12-18T22:27:35+00:00'
+requested_by: Pascal1414
+provider: github
+branch: main
+detected_tools_count: 2
+tools:
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
